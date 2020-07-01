@@ -4,6 +4,20 @@ Código desenvolvido no curso [Alura](https://cursos.alura.com.br/course/fundame
 
 ## Requisitos 
 - Python
+- pip (`pip install -r requirements.txt`)
+
+## Configurações do Banco
+- Postgresl
+Arquivo settings.py:
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgresql',
+        'USER': 'postgresql',
+        'PASSWORD': 'postgresql',
+        'HOST': 'localhost'
+    }
+} 
 
 ## Subindo servidor
 `python .\manage.py runserver`
@@ -11,6 +25,9 @@ Código desenvolvido no curso [Alura](https://cursos.alura.com.br/course/fundame
 ### Anotações:
 Criar um ambiente virtual
 `python -m venv ./venv`
+
+Instalar Django (ven)
+`activate.bat`
 
 Help
 `python .\manage.py help`
